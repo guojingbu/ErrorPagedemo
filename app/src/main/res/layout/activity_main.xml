@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yesway.errorpagedemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="loading" />
+
+        <Button
+            android:id="@+id/bt_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="empty" />
+
+        <Button
+            android:id="@+id/bt_neterror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="neterror" />
+
+        <Button
+            android:id="@+id/bt_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="data" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hello World!" />
+
+    <com.yesway.widget.ErrorHintView
+        android:id="@+id/hintView"
+        android:layout_below="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>
